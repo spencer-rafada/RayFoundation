@@ -8,4 +8,8 @@ describe('NavBar', () => {
     render(<Navbar />)
     expect(screen.getByText('Ray Foundation')).toBeInTheDocument()
   })
+  it('should render the call to action button', () => {
+    render(<Navbar />)
+    expect(screen.getByText('Donate Now')).toBeInTheDocument()
+  })
 })

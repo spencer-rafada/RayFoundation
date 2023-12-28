@@ -1,9 +1,10 @@
 'use client'
-import { Box, Flex, Text, useDisclosure } from '@chakra-ui/react'
+import { Box, Flex, HStack, Text, useDisclosure } from '@chakra-ui/react'
 import React, { useRef } from 'react'
 import NavbarLinkToggle from './NavbarLinkToggle'
 import NavbarLinks from './NavbarLinks'
 import Link from 'next/link'
+import CTAButton from './CTAButton'
 
 const links = [
   { to: '/', text: 'Home' },
@@ -41,14 +42,22 @@ export default function Navbar() {
         </Link>
       </Box>
       {/* Links */}
-      <NavbarLinks
-        links={links}
-        isOpen={isOpen}
-        onClose={onClose}
-        btnRef={btnRef}
-      />
-      {/* Toggle */}
-      <NavbarLinkToggle isOpen={isOpen} toggle={onOpen} btnRef={btnRef} />
+      <HStack>
+        <CTAButton
+          type='cta_donate'
+          variant='solid'
+          size='md'
+          colorScheme='brand'
+        />
+        <NavbarLinks
+          links={links}
+          isOpen={isOpen}
+          onClose={onClose}
+          btnRef={btnRef}
+        />
+        {/* Toggle */}
+        <NavbarLinkToggle isOpen={isOpen} toggle={onOpen} btnRef={btnRef} />
+      </HStack>
     </Flex>
   )
 }
