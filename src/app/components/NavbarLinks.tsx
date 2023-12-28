@@ -27,7 +27,7 @@ export default function NavbarLinks({
   return (
     <>
       <Box display={{ base: 'none', md: 'block' }}>
-        <Stack direction={{ base: 'column', md: 'row' }} spacing='1.5rem'>
+        <Stack direction={{ base: 'column', md: 'row' }}>
           {links.map((link) => {
             return <NavbarLink key={link.to} to={link.to} text={link.text} />
           })}
@@ -44,10 +44,7 @@ export default function NavbarLinks({
           <DrawerCloseButton />
           <DrawerHeader>Menu</DrawerHeader>
           <DrawerBody>
-            <Stack
-              spacing='1.5rem'
-              divider={<StackDivider borderColor='gray.200' />}
-            >
+            <Stack divider={<StackDivider borderColor='gray.200' />}>
               {links.map((link) => {
                 return (
                   <NavbarLink key={link.to} to={link.to} text={link.text} />

@@ -7,7 +7,6 @@ import Link from 'next/link'
 import CTAButton from './CTAButton'
 
 const links = [
-  { to: '/', text: 'Home' },
   { to: '/about', text: 'About Us' },
   { to: '/contact', text: 'Contact' },
   { to: '/projects', text: 'Our Projects' },
@@ -21,7 +20,7 @@ export default function Navbar() {
   return (
     <Flex
       alignItems='center'
-      p={6}
+      p={{ base: 4, md: 6 }}
       justifyContent='space-between'
       border='1px'
       borderColor='gray.200'
@@ -32,7 +31,7 @@ export default function Navbar() {
       <Box>
         <Link href='/'>
           <Text
-            fontSize='1.5rem'
+            fontSize={{ base: '1rem', md: '1.5rem' }}
             fontWeight={700}
             textTransform='uppercase'
             color='brand.300'
