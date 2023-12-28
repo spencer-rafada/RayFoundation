@@ -1,14 +1,14 @@
-import { Metadata, ResolvingMetadata } from 'next'
+import { Metadata } from 'next'
 import React from 'react'
 
 type MetadataProps = {
   params: { id: string }
 }
 
-export async function generateMetadata(
-  { params }: MetadataProps,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: MetadataProps): // parent: ResolvingMetadata
+Promise<Metadata> {
   const id = params.id
 
   // Fetch Team Member Information Here

@@ -1,9 +1,6 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
 import ThemeProvider from './_providers/ThemeProvider'
-
-const inter = Inter({ subsets: ['latin'] })
+import Navbar from './components/Navbar'
 
 export const metadata: Metadata = {
   title: 'Ray Foundation',
@@ -17,8 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body>
+        <ThemeProvider>
+          <Navbar></Navbar>
+          <section>{children}</section>
+        </ThemeProvider>
       </body>
     </html>
   )
