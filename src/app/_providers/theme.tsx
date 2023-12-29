@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import { extendTheme } from '@chakra-ui/react'
 
 const overrides = {
@@ -16,8 +17,8 @@ const overrides = {
     },
   },
   fonts: {
-    heading: 'Monda, sans-serif',
-    body: 'Roboto Slab, serif',
+    heading: `"Roboto Slab", serif`,
+    body: `"Monda", sans-serif`,
   },
 }
 
