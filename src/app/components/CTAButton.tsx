@@ -10,7 +10,7 @@ export default function CTAButton({
 }: {
   type: string
   variant: string
-  size: string
+  size: string | object
   colorScheme: string
 }) {
   const [text, setText] = useState('')
