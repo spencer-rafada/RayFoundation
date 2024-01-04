@@ -15,13 +15,13 @@ import CTAButton from '../components/CTAButton'
 export default function HeroHeader() {
   return (
     <>
-      <Box p={{ base: 8, lg: 16 }}>
+      <Box p={{ base: 0, md: 16 }}>
         <Grid
           h='100%'
           templateColumns={{ base: 'repeat(1,1fr)', lg: 'repeat(2, 1fr)' }}
           gap={6}
         >
-          <GridItem w='100%' h='100%'>
+          <GridItem w='100%' h='100%' p={{ base: 8, md: 0 }}>
             <VStack spacing={6} alignItems={{ base: 'center', lg: 'start' }}>
               <Heading
                 as='h1'
