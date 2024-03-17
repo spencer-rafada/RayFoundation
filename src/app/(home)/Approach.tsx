@@ -7,7 +7,6 @@ import {
   Heading,
   Link,
 } from '@chakra-ui/react'
-import { NextLink } from 'next/link'
 import React from 'react'
 
 export default function Approach() {
@@ -37,7 +36,7 @@ export default function Approach() {
           className='gap-x-8'
         >
           <GridItem>
-            <Link as={NextLink} href='/about'>
+            <Link href='/about'>
               <Card>
                 <CardHeader>
                   <Heading as='h3' size='md'>
@@ -48,7 +47,7 @@ export default function Approach() {
             </Link>
           </GridItem>
           <GridItem className='md:even:mt-10'>
-            <Link as={NextLink} href='/about'>
+            <Link href='/about'>
               <Card>
                 <CardHeader>
                   <Heading as='h3' size='md'>
@@ -59,7 +58,7 @@ export default function Approach() {
             </Link>
           </GridItem>
           <GridItem>
-            <Link as={NextLink} href='/about'>
+            <Link href='/about'>
               <Card>
                 <CardHeader>
                   <Heading as='h3' size='md'>
@@ -70,7 +69,7 @@ export default function Approach() {
             </Link>
           </GridItem>
           <GridItem className='md:even:mt-10'>
-            <Link as={NextLink} href='/about'>
+            <Link href='/about'>
               <Card>
                 <CardHeader>
                   <Heading as='h3' size='md'>
