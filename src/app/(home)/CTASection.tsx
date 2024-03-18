@@ -2,7 +2,13 @@ import { Divider, Flex, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
 import CTAButton from '../components/CTAButton'
 
-export default function CTASection() {
+export default function CTASection({
+  heading,
+  subheading,
+}: {
+  heading: string
+  subheading?: string
+}) {
   return (
     <>
       <Flex
@@ -16,16 +22,24 @@ export default function CTASection() {
           size={{ base: 'xl', lg: '2xl' }}
           textAlign={'center'}
           color='brand.600'
+          data-testid='cta-section-heading'
         >
-          Get Involved and Make a Difference
+          {heading}
         </Heading>
         <Divider borderColor='brand.100' />
-        <Text textAlign={'center'} color='brand.600'>
-          Education is a light, let&apos;s keep it shining bright. Support our
-          cause through donations.
+        <Text
+          textAlign={'center'}
+          color='brand.600'
+          data-testid='cta-section-subheading'
+        >
+          {subheading}
         </Text>
         <Divider borderColor='brand.100' />
-        <Flex justify={'center'} align={'center'}>
+        <Flex
+          justify={'center'}
+          align={'center'}
+          data-testid='cta-section-button'
+        >
           <CTAButton
             type='cta_donate'
             variant='solid'
