@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import React from 'react'
+import OurStory from './components/OurStory'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
-      <div>About Page</div>
+      <OurStory />
     </>
   )
 }
