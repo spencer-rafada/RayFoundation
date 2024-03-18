@@ -26,7 +26,6 @@ export default function HeroHeader() {
               <Heading
                 as='h1'
                 size={{ base: '2xl', lg: '3xl' }}
-                noOfLines={{ base: 3, lg: 2 }}
                 textAlign={{ base: 'center', lg: 'left' }}
               >
                 Transforming Lives Through Service

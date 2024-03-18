@@ -20,7 +20,6 @@ export default function Home() {
       <Suspense fallback={null}>
         <CTASection />
       </Suspense>
-      <div>Ray Foundation</div>
     </>
   )
 }
