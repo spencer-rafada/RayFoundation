@@ -18,7 +18,11 @@ export default function Home() {
         <Approach />
       </Suspense>
       <Suspense fallback={null}>
-        <CTASection />
+        <CTASection
+          heading='Get Involved and Make a Difference'
+          subheading="Education is a light, let's keep it shining bright. Support our
+          cause through donations."
+        />
       </Suspense>
     </>
   )

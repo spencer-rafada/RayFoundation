@@ -6,21 +6,22 @@ import CTASection from '../CTASection'
 
 describe('CTASection', () => {
   it('should render the heading', () => {
-    render(<CTASection />)
-    expect(
-      screen.getByText('Get Involved and Make a Difference')
-    ).toBeInTheDocument()
+    render(<CTASection heading='Get Involved and Make a Difference' />)
+    expect(screen.getByTestId('cta-section-heading')).toBeInTheDocument()
   })
   it('should render the subheading', () => {
-    render(<CTASection />)
+    render(
+      <CTASection
+        heading='Test Heading'
+        subheading="Education is a light, let's keep it shining bright. Support our cause through donations."
+      />
+    )
     expect(
-      screen.getByText(
-        "Education is a light, let's keep it shining bright. Support our cause through donations."
-      )
+      expect(screen.getByTestId('cta-section-subheading')).toBeInTheDocument()
     )
   })
   it('should render the button', () => {
-    render(<CTASection />)
-    expect(screen.getByText('Donate Now')).toBeInTheDocument()
+    render(<CTASection heading='test header' />)
+    expect(screen.getByTestId('cta-section-button')).toBeInTheDocument()
   })
 })
