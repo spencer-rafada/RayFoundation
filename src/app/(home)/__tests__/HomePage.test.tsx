@@ -1,4 +1,4 @@
-import { screen, render, waitFor } from '@testing-library/react'
+import { render, waitFor } from '@testing-library/react'
 import React from 'react'
 import Home from '@/app/page'
 import '@testing-library/jest-dom'
