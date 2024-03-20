@@ -1,13 +1,6 @@
-import {
-  Card,
-  CardHeader,
-  Flex,
-  Grid,
-  GridItem,
-  Heading,
-  Link,
-} from '@chakra-ui/react'
+import { Flex, Grid, GridItem, Heading } from '@chakra-ui/react'
 import React from 'react'
+import ApproachItem from './ApproachItem'
 
 export default function Approach() {
   // Approaches
@@ -36,48 +29,25 @@ export default function Approach() {
           className='gap-x-8'
         >
           <GridItem>
-            <Link href='/about'>
-              <Card>
-                <CardHeader>
-                  <Heading as='h3' size='md'>
-                    Community Centered Approach
-                  </Heading>
-                </CardHeader>
-              </Card>
-            </Link>
+            <ApproachItem href='/about' title='Community Centered Approach' />
           </GridItem>
           <GridItem className='md:even:mt-10'>
-            <Link href='/about'>
-              <Card>
-                <CardHeader>
-                  <Heading as='h3' size='md'>
-                    Needs Assessment and Dialogue
-                  </Heading>
-                </CardHeader>
-              </Card>
-            </Link>
+            <ApproachItem href='/about' title='Needs Assessment and Dialogue' />
           </GridItem>
           <GridItem>
-            <Link href='/about'>
-              <Card>
-                <CardHeader>
-                  <Heading as='h3' size='md'>
-                    Inclusive Planning
-                  </Heading>
-                </CardHeader>
-              </Card>
-            </Link>
+            <ApproachItem href='/about' title='Inclusive Planning' />
           </GridItem>
           <GridItem className='md:even:mt-10'>
-            <Link href='/about'>
-              <Card>
-                <CardHeader>
-                  <Heading as='h3' size='md'>
-                    Education Advocacy
-                  </Heading>
-                </CardHeader>
-              </Card>
-            </Link>
+            <ApproachItem href='/about' title='Education Advocacy' />
+          </GridItem>
+          <GridItem className='md:even:mt-10'>
+            <ApproachItem href='/about' title='Legal Workforce Engagement' />
+          </GridItem>
+          <GridItem className='md:even:mt-10'>
+            <ApproachItem href='/about' title='Transparent Implementation' />
+          </GridItem>
+          <GridItem className='md:even:mt-10'>
+            <ApproachItem href='/about' title='Sustainability and Longevity' />
           </GridItem>
         </Grid>
       </Flex>
