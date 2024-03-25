@@ -8,7 +8,6 @@ import CTAButton from './CTAButton'
 
 const links = [
   { to: '/about', text: 'About Us' },
-  { to: '/contact', text: 'Contact' },
   { to: '/projects', text: 'Our Projects' },
   { to: '/team', text: 'Team' },
 ]
