@@ -1,40 +1,48 @@
 [
   {
+    "id": "raymond-steven",
     "name": "Raymond Steven",
     "position": "President",
     "image": "/Team/raymond.webp"
   },
   {
+    "id": "samuel-saidu",
     "name": "Samuel Saidu",
     "position": "Vice President",
     "image": "/Team/samuel.webp"
   },
   {
+    "id": "tiffany-stanger",
     "name": "Tiffany Stanger",
     "position": "Secretary",
     "image": "/Team/tiffany.webp"
   },
   {
+    "id": "sonny-cobinah",
     "name": "Sonny Cobinah",
     "position": "Board Member",
     "image": "/Team/sonny.webp"
   },
   {
+    "id": "emma-haddock",
     "name": "Emma Haddock",
     "position": "Board Member",
     "image": "/Team/emma.webp"
   },
   {
+    "id": "dean-coleman",
     "name": "Dean Coleman",
     "position": "Board Member",
     "image": "/Team/dean.webp"
   },
   {
+    "id": "teagan-stanger",
     "name": "Teagan Stanger",
     "position": "Graphic Designer",
     "image": "/Team/teagan.webp"
   },
   {
+    "id": "spencer-rafada",
     "name": "Spencer Rafada",
     "position": "Web Developer",
     "image": ""

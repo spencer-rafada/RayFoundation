@@ -3,18 +3,18 @@ import { Avatar, Flex, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 
 export default function TeamCard({
+  id,
   name,
   imgSrc,
   position,
 }: {
+  id: string
   name: string
   imgSrc?: string
   position: string
 }) {
-  const teamLink = name.split(' ').join('-').toLowerCase()
-
   return (
-    <Link href={`/team/${teamLink}`}>
+    <Link href={`/team/${id}`}>
       <Flex direction='column' p='4' alignItems='center'>
         <Avatar
           name='Spencer Rafada'

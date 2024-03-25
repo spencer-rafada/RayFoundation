@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import React from 'react'
+import { promises as fs } from 'fs'
 
 type MetadataProps = {
   params: { id: string }
@@ -11,17 +12,25 @@ export async function generateMetadata({
 Promise<Metadata> {
   const id = params.id
 
-  // Fetch Team Member Information Here
+  const file = await fs.readFile(
+    process.cwd() + '/src/app/team/team.json',
+    'utf-8'
+  )
+  const data = JSON.parse(file)
+
+  const teamMember = data.find(
+    (teamMember: { id: string; name: string }) => teamMember.id === id
+  )
 
   return {
-    title: `Team Member ${id}`,
-    description: `Team Member ${id}`,
+    title: `${teamMember.name} | ${teamMember.position}`,
+    description: `Meet ${teamMember.name} is the ${teamMember.position} of Ray Foundation`,
   }
 }
 
-export async function generateStaticParams() {
-  return [{ id: '1' }, { id: '2' }, { id: '3' }]
-}
+// export async function generateStaticParams() {
+//   return [{ id: '1' }, { id: '2' }, { id: '3' }]
+// }
 
 export default function TeamMember({ params }: { params: { id: string } }) {
   return <div>TeamMember {params.id}</div>

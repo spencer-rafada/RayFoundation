@@ -26,7 +26,8 @@ export default function Team() {
           {teamData.map((teamMember) => {
             return (
               <TeamCard
-                key={teamMember.name}
+                key={teamMember.id}
+                id={teamMember.id}
                 name={teamMember.name}
                 imgSrc={teamMember.image}
                 position={teamMember.position}
