@@ -17,7 +17,7 @@ export default function TeamCard({
     <Link href={`/team/${id}`}>
       <Flex direction='column' p='4' alignItems='center'>
         <Avatar
-          name='Spencer Rafada'
+          name={name}
           src={imgSrc}
           size={{ base: 'xl', md: '2xl' }}
           data-testid='team-card-img'
