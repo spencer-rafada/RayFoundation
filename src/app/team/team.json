@@ -3,48 +3,56 @@
     "id": "raymond-steven",
     "name": "Raymond Steven",
     "position": "President",
-    "image": "/Team/raymond.webp"
+    "image": "/Team/raymond.webp",
+    "description": ["Test"]
   },
   {
     "id": "samuel-saidu",
     "name": "Samuel Saidu",
     "position": "Vice President",
-    "image": "/Team/samuel.webp"
+    "image": "/Team/samuel.webp",
+    "description": ["Test"]
   },
   {
     "id": "tiffany-stanger",
     "name": "Tiffany Stanger",
     "position": "Secretary",
-    "image": "/Team/tiffany.webp"
+    "image": "/Team/tiffany.webp",
+    "description": ["Test"]
   },
   {
     "id": "sonny-cobinah",
     "name": "Sonny Cobinah",
     "position": "Board Member",
-    "image": "/Team/sonny.webp"
+    "image": "/Team/sonny.webp",
+    "description": ["Test"]
   },
   {
     "id": "emma-haddock",
     "name": "Emma Haddock",
     "position": "Board Member",
-    "image": "/Team/emma.webp"
+    "image": "/Team/emma.webp",
+    "description": ["Test"]
   },
   {
     "id": "dean-coleman",
     "name": "Dean Coleman",
     "position": "Board Member",
-    "image": "/Team/dean.webp"
+    "image": "/Team/dean.webp",
+    "description": ["Test"]
   },
   {
     "id": "teagan-stanger",
     "name": "Teagan Stanger",
     "position": "Graphic Designer",
-    "image": "/Team/teagan.webp"
+    "image": "/Team/teagan.webp",
+    "description": ["Test"]
   },
   {
     "id": "spencer-rafada",
     "name": "Spencer Rafada",
     "position": "Web Developer",
-    "image": ""
+    "image": "/Team/spencer.webp",
+    "description": ["Test"]
   }
 ]
