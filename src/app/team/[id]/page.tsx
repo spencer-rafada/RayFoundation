@@ -68,10 +68,10 @@ export default async function TeamMember({
         </Flex>
         <Flex direction='column' gap={{ base: 2, md: 3 }}>
           <Flex direction='column' gap={{ base: 2, md: 3 }}>
-            <Heading as='h1' size={{ base: 'xl', md: '2xl' }}>
+            <Heading as='h1' size={{ base: 'xl', md: '2xl' }} color='brand.600'>
               {teamMember.name}
             </Heading>
-            <Heading as='h3' size={{ base: 'lg', md: 'xl' }}>
+            <Heading as='h3' size={{ base: 'lg', md: 'xl' }} color='gray.700'>
               {teamMember.position}
             </Heading>
           </Flex>
