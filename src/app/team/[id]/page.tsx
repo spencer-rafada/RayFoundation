@@ -55,30 +55,45 @@ export default async function TeamMember({
         p={{ base: 8, md: 16 }}
         direction={{ base: 'column', md: 'row-reverse' }}
         justify='space-between'
+        align={{ base: 'center', md: 'start' }}
         gap={{ base: 4, md: 6 }}
       >
-        <Flex justify='center' align='center'>
-          <Image
-            src={teamMember.image}
-            boxSize='250px'
-            alt={`Image of ${teamMember.name}`}
-            borderRadius='full'
-            objectFit='cover'
-          />
-        </Flex>
+        {/* <Flex justify='center' grow='3'> */}
+        <Image
+          src={teamMember.image}
+          boxSize={{ base: '250px', md: '300px' }}
+          alt={`Image of ${teamMember.name}`}
+          borderRadius='full'
+          objectFit='cover'
+        />
+        {/* </Flex> */}
         <Flex direction='column' gap={{ base: 2, md: 3 }}>
           <Flex direction='column' gap={{ base: 2, md: 3 }}>
-            <Heading as='h1' size={{ base: 'xl', md: '2xl' }} color='brand.600'>
+            <Heading
+              as='h1'
+              size={{ base: 'xl', md: '2xl' }}
+              color='brand.600'
+              textAlign={{ base: 'center', md: 'start' }}
+            >
               {teamMember.name}
             </Heading>
-            <Heading as='h3' size={{ base: 'lg', md: 'xl' }} color='gray.700'>
+            <Heading
+              as='h3'
+              size={{ base: 'lg', md: 'xl' }}
+              color='gray.700'
+              textAlign={{ base: 'center', md: 'start' }}
+            >
               {teamMember.position}
             </Heading>
           </Flex>
           <Flex direction='column' gap={{ base: 2, md: 3 }}>
             {teamMember.description.map((desc: string, index: number) => {
               return (
-                <Text key={index} fontSize={{ base: 'md', md: 'lg' }}>
+                <Text
+                  key={index}
+                  fontSize={{ base: 'md', md: 'lg' }}
+                  textAlign={{ base: 'center', md: 'start' }}
+                >
                   {desc}
                 </Text>
               )
