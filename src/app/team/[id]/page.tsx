@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
 import React from 'react'
-import { promises as fs } from 'fs'
 import {
   Box,
   Breadcrumb,
@@ -11,6 +10,7 @@ import {
   Image,
   Text,
 } from '@chakra-ui/react'
+import teamData from '../team.json'
 
 type MetadataProps = {
   params: { id: string }
@@ -22,15 +22,16 @@ export async function generateMetadata({
 Promise<Metadata> {
   const id = params.id
 
-  const file = await fs.readFile(
-    process.cwd() + '/src/app/team/team.json',
-    'utf-8'
-  )
-  const data = JSON.parse(file)
-
-  const teamMember = data.find(
+  const teamMember = teamData.find(
     (teamMember: { id: string; name: string }) => teamMember.id === id
   )
+
+  if (!teamMember) {
+    return {
+      title: 'Team Member Not Found',
+      description: 'Team Member Not Found',
+    }
+  }
 
   return {
     title: `${teamMember.name} | ${teamMember.position}`,
@@ -42,19 +43,8 @@ Promise<Metadata> {
 //   return [{ id: '1' }, { id: '2' }, { id: '3' }]
 // }
 
-export default async function TeamMember({
-  params,
-}: {
-  params: { id: string }
-}) {
-  const file = await fs.readFile(
-    process.cwd() + '/src/app/team/team.json',
-    'utf-8'
-  )
-
-  const data = JSON.parse(file)
-
-  const teamMember = data.find(
+export default function TeamMember({ params }: { params: { id: string } }) {
+  const teamMember = teamData.find(
     (teamMember: { id: string; name: string }) => teamMember.id === params.id
   )
 
@@ -69,7 +59,7 @@ export default async function TeamMember({
             <BreadcrumbLink href='/team'>Team</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem isCurrentPage>
-            <BreadcrumbLink href='#'>{teamMember.name}</BreadcrumbLink>
+            <BreadcrumbLink href='#'>{teamMember?.name}</BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
         <Flex
@@ -80,9 +70,9 @@ export default async function TeamMember({
         >
           {/* <Flex justify='center' grow='3'> */}
           <Image
-            src={teamMember.image}
+            src={teamMember?.image}
             boxSize={{ base: '250px', md: '300px' }}
-            alt={`Image of ${teamMember.name}`}
+            alt={`Image of ${teamMember?.name}`}
             borderRadius='full'
             objectFit='cover'
           />
@@ -95,7 +85,7 @@ export default async function TeamMember({
                 color='brand.600'
                 textAlign={{ base: 'center', md: 'start' }}
               >
-                {teamMember.name}
+                {teamMember?.name}
               </Heading>
               <Heading
                 as='h3'
@@ -103,11 +93,11 @@ export default async function TeamMember({
                 color='gray.700'
                 textAlign={{ base: 'center', md: 'start' }}
               >
-                {teamMember.position}
+                {teamMember?.position}
               </Heading>
             </Flex>
             <Flex direction='column' gap={{ base: 2, md: 3 }}>
-              {teamMember.description.map((desc: string, index: number) => {
+              {teamMember?.description.map((desc: string, index: number) => {
                 return (
                   <Text
                     key={index}
