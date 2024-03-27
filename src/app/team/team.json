@@ -4,55 +4,65 @@
     "name": "Raymond Steven",
     "position": "President",
     "image": "/Team/raymond.webp",
-    "description": ["Test"]
+    "description": ["Raymond Bobson Steven is a dedicated advocate for education-driven community transformation. Born in Kenema, Sierra Leone, Raymond's journey from walking ten miles a day to pursue education ignited his profound understanding of education's pivotal role in changing lives, families, and entire communities. His firm belief that education is the beacon guiding societal progress has fueled his relentless pursuit of knowledge and impact.",
+    "After completing high school, Raymond's determination led him to the United States, where he seized the opportunity to pursue a bachelor's degree in Public Policy and Administration. This decision is not just a personal endeavor, but a generational mission deeply rooted in his commitment to shaping his country's future. Hailing from Sierra Leone, a nation grappling with multifaceted challenges, Raymond envisions a brighter tomorrow by addressing pressing issues such as education, healthcare, infrastructure, leadership, and corruption.",
+    "Raymond's passion for his homeland is evident in every facet of his academic journey. With every class he undertakes, he asks himself, 'How can I leverage the knowledge I acquire to contribute to solving Sierra Leone's challenges?' His goal is clear: to create policies that uplift the lives of his fellow citizens and foster enduring positive change. For Raymond, this endeavor transcends a mere career; it's a profound mission that speaks to the aspirations of future generations.",
+    "With an unwavering commitment to his cause, Raymond seeks support from the broader community—resources, networks, and collaboration—to turn his vision into reality. His mission is a call to action, a resounding declaration that Sierra Leone's future generations deserve a better tomorrow, one where education and policy drive progress and prosperity. Raymond Bobson Steven is a torchbearer of change, ready to light the path toward a brighter future for his beloved Sierra Leone. "]
   },
   {
     "id": "samuel-saidu",
     "name": "Samuel Saidu",
     "position": "Vice President",
     "image": "/Team/samuel.webp",
-    "description": ["Test"]
+    "description": ["I am Samuel Faraday Saidu, a devoted public health practitioner originating from the picturesque West African nation of Sierra Leone. Armed with a bachelor's degree in public health from Brigham Young University-Idaho, I am currently pursuing a master's degree in public health with a specialization in Epidemiology at North Dakota State University.",
+    "My journey within the realm of public health has been profoundly inspiring. It commenced with roles at esteemed non-governmental organizations like Caritas International, PLAN International, and Save the Children International, all based in Sierra Leone. These experiences not only broadened my horizons but also fortified my commitment to effecting positive change in the field of public health, particularly in underserved regions.",
+    "Amid the global pandemic of 2021, I took on the pivotal role of a Community Health Worker at the Bear River Health Department in Logan, Utah. Here, I made significant contributions to the ongoing battle against COVID-19. My unwavering dedication and service during these challenging times garnered commendation.",
+    "Presently, I serve as a Graduate Research Assistant at the Center for Social Research at North Dakota State University. In this capacity, I continue to contribute actively to the field of public health through research and academic endeavors. My work not only underscores my dedication to enhancing public health but also underscores my resolute determination to become a leading epidemiologist in the field."
+  ]
   },
   {
     "id": "tiffany-stanger",
     "name": "Tiffany Stanger",
     "position": "Secretary",
     "image": "/Team/tiffany.webp",
-    "description": ["Test"]
+    "description": ["Tiffany graduated from Utah State University with a BS in Family and Human Development.  She enjoys oraganizing, cleaning and baking.  She has 7 children, 2 girls and 5 boys.  She enjoyed traveling when she was younger and has been to Japan, France, England, Italy, Belgium, Egypt, Isreal, Mexico and Canada. "]
   },
   {
     "id": "sonny-cobinah",
     "name": "Sonny Cobinah",
     "position": "Board Member",
     "image": "/Team/sonny.webp",
-    "description": ["Test"]
+    "description": ["Sonny Cobinah's goal is to help build up the community in his country to reach their potential. He helps in the little ways he can to make life better for them. He has been working with previous foundations to help kids in various communities, and has always found it inspiring to help other people."]
   },
   {
     "id": "emma-haddock",
     "name": "Emma Haddock",
     "position": "Board Member",
     "image": "/Team/emma.webp",
-    "description": ["Test"]
+    "description": ["Hi my name is Emma Haddock and I am currently studying Therapeutic Recreation at BYU Idaho. I love anything to do with the outdoors among my favorite activities is hiking or running. I love to travel to different places with my family. I have learned through those opportunities to travel that no matter where we are in the world we all are connected. One of the greatest ways we are connected is through education. I am grateful for my education and for the opportunities for growth that it has provided me and that is one of the many reasons I am happy to be a part of the Ray Foundation. "]
   },
   {
     "id": "dean-coleman",
     "name": "Dean Coleman",
     "position": "Board Member",
     "image": "/Team/dean.webp",
-    "description": ["Test"]
+    "description": ["Dean Coleman has a broad background of leadership, management and business experience. He has led organizations, teams, and programs for small and large companies across multiple industries, for non-profit organizations, and for the U.S. Federal Government. Mr. Coleman is a member of the faculty of the BYU-Idaho Business Management Department in the College of Business and Communication, where he enjoys teaching, mentoring, and cheering on his students.",
+    "In addition to teaching a variety of courses, he is also the faculty advisor to the Business Management Society. Prior to joining the faculty at BYU-I, Mr. Coleman worked in commercial industry and the Federal Government for more than 25 years. Most of his career was focused on developing strategic solutions, implementing innovative capabilities, and supporting critical national security programs in the unique and challenging environment of the U.S. Intelligence Community. Mr. Coleman earned his Bachelor of Science degree from BYU and his Master of Business Administration (MBA), with areas of concentration in strategic management and international affairs, from The George Washington University. He has been married for nearly 27 years and has three children and one grandchild."]
   },
   {
     "id": "teagan-stanger",
     "name": "Teagan Stanger",
     "position": "Graphic Designer",
     "image": "/Team/teagan.webp",
-    "description": ["Test"]
+    "description": ["Teagan is currently studying graphic desgn at BYU-Idaho.  She is excited about helping the Ray Foundation grow while developing her skills along the way.  Teagan dreams of traveling the world and exploring the different cultures and styles other countries have to offer."]
   },
   {
     "id": "spencer-rafada",
     "name": "Spencer Rafada",
     "position": "Web Developer",
     "image": "/Team/spencer.webp",
-    "description": ["Test"]
+    "description": ["I love Web Development and utilizing software tools to create a high quality and robust development workflow. I have spent the past year developing software for work-related projects, open-source websites, side projects, and passion projects. I am deeply motivated by the understanding that software applications can significantly enhance people's lives, and I am dedicated and passionate to ensure the highest quality in their development.",
+    "I enjoy the pursuit of continuous learning and self-improvement. Outside of programming, I cherish and love spending time with my wife going out for walks, spontaneous road trips, and watching endless documentaries. I enjoy playing Basketball and being active. Please don't hesitate to reach out so we can enjoy some pick up games.",
+    "I did a two-year volunteer mission at Sierra Leone. I learned a lot of things and is a big factor of how I am today. I am excited to be able to help the people of Sierra Leone."]
   }
 ]
