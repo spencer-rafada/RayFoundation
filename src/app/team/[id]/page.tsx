@@ -1,7 +1,16 @@
 import { Metadata } from 'next'
 import React from 'react'
 import { promises as fs } from 'fs'
-import { Flex, Heading, Image, Text } from '@chakra-ui/react'
+import {
+  Box,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  Flex,
+  Heading,
+  Image,
+  Text,
+} from '@chakra-ui/react'
 
 type MetadataProps = {
   params: { id: string }
@@ -51,56 +60,68 @@ export default async function TeamMember({
 
   return (
     <>
-      <Flex
-        p={{ base: 8, md: 16 }}
-        direction={{ base: 'column', md: 'row-reverse' }}
-        justify='space-between'
-        align={{ base: 'center', md: 'start' }}
-        gap={{ base: 4, md: 6 }}
-      >
-        {/* <Flex justify='center' grow='3'> */}
-        <Image
-          src={teamMember.image}
-          boxSize={{ base: '250px', md: '300px' }}
-          alt={`Image of ${teamMember.name}`}
-          borderRadius='full'
-          objectFit='cover'
-        />
-        {/* </Flex> */}
-        <Flex direction='column' gap={{ base: 2, md: 3 }}>
+      <Box p={{ base: 8, md: 16 }}>
+        <Breadcrumb>
+          <BreadcrumbItem>
+            <BreadcrumbLink href='/'>Home</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem>
+            <BreadcrumbLink href='/team'>Team</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem isCurrentPage>
+            <BreadcrumbLink href='#'>{teamMember.name}</BreadcrumbLink>
+          </BreadcrumbItem>
+        </Breadcrumb>
+        <Flex
+          direction={{ base: 'column', md: 'row-reverse' }}
+          justify='space-between'
+          align={{ base: 'center', md: 'start' }}
+          gap={{ base: 4, md: 6 }}
+        >
+          {/* <Flex justify='center' grow='3'> */}
+          <Image
+            src={teamMember.image}
+            boxSize={{ base: '250px', md: '300px' }}
+            alt={`Image of ${teamMember.name}`}
+            borderRadius='full'
+            objectFit='cover'
+          />
+          {/* </Flex> */}
           <Flex direction='column' gap={{ base: 2, md: 3 }}>
-            <Heading
-              as='h1'
-              size={{ base: 'xl', md: '2xl' }}
-              color='brand.600'
-              textAlign={{ base: 'center', md: 'start' }}
-            >
-              {teamMember.name}
-            </Heading>
-            <Heading
-              as='h3'
-              size={{ base: 'lg', md: 'xl' }}
-              color='gray.700'
-              textAlign={{ base: 'center', md: 'start' }}
-            >
-              {teamMember.position}
-            </Heading>
-          </Flex>
-          <Flex direction='column' gap={{ base: 2, md: 3 }}>
-            {teamMember.description.map((desc: string, index: number) => {
-              return (
-                <Text
-                  key={index}
-                  fontSize={{ base: 'md', md: 'lg' }}
-                  textAlign={{ base: 'center', md: 'start' }}
-                >
-                  {desc}
-                </Text>
-              )
-            })}
+            <Flex direction='column' gap={{ base: 2, md: 3 }}>
+              <Heading
+                as='h1'
+                size={{ base: 'xl', md: '2xl' }}
+                color='brand.600'
+                textAlign={{ base: 'center', md: 'start' }}
+              >
+                {teamMember.name}
+              </Heading>
+              <Heading
+                as='h3'
+                size={{ base: 'lg', md: 'xl' }}
+                color='gray.700'
+                textAlign={{ base: 'center', md: 'start' }}
+              >
+                {teamMember.position}
+              </Heading>
+            </Flex>
+            <Flex direction='column' gap={{ base: 2, md: 3 }}>
+              {teamMember.description.map((desc: string, index: number) => {
+                return (
+                  <Text
+                    key={index}
+                    fontSize={{ base: 'md', md: 'lg' }}
+                    textAlign={{ base: 'center', md: 'start' }}
+                  >
+                    {desc}
+                  </Text>
+                )
+              })}
+            </Flex>
           </Flex>
         </Flex>
-      </Flex>
+      </Box>
     </>
   )
 }
